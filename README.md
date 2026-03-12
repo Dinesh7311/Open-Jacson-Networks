@@ -16,12 +16,47 @@ Visual components and Python
 ![image](https://user-images.githubusercontent.com/103921593/203239789-bc870dce-6727-487b-a0e2-4fc3f5114889.png)
 
 
-## Experiment:
-
-
 ## Program
+```python
+# Open Jackson Network - Series Queues
+
+arrival_interval = 12
+lam = 1/arrival_interval
+
+service_times = [1, 1.5, 1.3, 7]
+
+print("Arrival rate =", lam)
+
+Ls_total = 0
+W_total = 0
+
+for i, s in enumerate(service_times):
+    mu = 1/s
+    
+    Ls = lam/(mu-lam)
+    Lq = (lam**2)/(mu*(mu-lam))
+    
+    Ws = Ls/lam
+    Wq = Lq/lam
+    
+    Ls_total += Ls
+    W_total += Ws
+    
+    print("\nServer", i+1)
+    print("Service rate =", mu)
+    print("Average number in queue =", Lq)
+    print("Average number in system =", Ls)
+    print("Waiting time in queue =", Wq)
+    print("Waiting time in system =", Ws)
+
+print("\nTotal materials in system =", Ls_total)
+print("Total waiting time in system =", W_total)
+```
 
 
 ## Output
+<img width="1691" height="883" alt="image" src="https://github.com/user-attachments/assets/5a9d5b25-b216-499f-9f9a-d8a83a8bccb2" />
+
 
 ## Result
+Thus the Series Queue System (Open Jackson Network) was analyzed using Python.
