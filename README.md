@@ -64,4 +64,5 @@ print("Total waiting time in system =", W_total)
 Thus the Series Queue System (Open Jackson Network) was analyzed using Python.
 
 GITHUB LINK:
-ithub.com/Dinesh7311/Open-Jacson-Networks
+
+https://github.com/Dinesh7311/Open-Jacson-Networks/blob/main/README.md
