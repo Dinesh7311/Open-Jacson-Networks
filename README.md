@@ -1,3 +1,5 @@
+DATE:10.03.26
+
 # Series Queues with infinite capacity - Open Jackson Network
 
 ## Aim :
@@ -60,3 +62,6 @@ print("Total waiting time in system =", W_total)
 
 ## Result
 Thus the Series Queue System (Open Jackson Network) was analyzed using Python.
+
+GITHUB LINK:
+ithub.com/Dinesh7311/Open-Jacson-Networks
